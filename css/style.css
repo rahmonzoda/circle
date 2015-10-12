@@ -23,7 +23,7 @@ body {
 	background: #333;
 }
 
-.portfolio {
+.drops {
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -31,19 +31,19 @@ body {
 
 
 
-.portfolio li {
+.drops li {
 	position: absolute;
 	top: 20px;
 	left: 20px;
 
 	list-style: none;
 
-	-webkit-transition: all ease-out .5s;
-	-o-transition: all ease-out 3.5s;
-	transition: all ease-out 3.5s;
+	-webkit-transition: all ease-out 0.5s;
+	-o-transition: all ease-out 0.5s;
+	transition: all ease-out 0.5s;
 }
 
-.portfolio li a {
+.drops li a {
 	color: #fff;
 	font-size: 30px;
 	line-height: 60px;
@@ -58,6 +58,6 @@ body {
 }
 
 
-.portfolio .active a {
+.drops .active a {
 	background: #fab;
 }

@@ -13,6 +13,7 @@
         this.els = qsa(els);
 
         this.init();
+        this.parent();
     }
 
     Circle.prototype.setOptions = function (options) {
@@ -69,6 +70,18 @@
 
         return Math.round( -( options.angleY * Math.cos( (frags / 180) * val * Math.PI ) ) + options.angleY );
     };
+
+    Circle.prototype.parent = function() {
+        var el = this.els[0];
+        var options = this.options;
+        var parent = el.parentNode;
+
+        parent.style.width = (options.angleX *2 + el.clientWidth ) + 'px'
+        parent.style.height = (options.angleY *2 + el.clientWidth ) + 'px'
+        
+        //parent.style.borderRadius = '100%'
+    }
+
 
     window.Circle = Circle;
 
