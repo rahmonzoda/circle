@@ -33,14 +33,14 @@ body {
 
 .drops li {
 	position: absolute;
-	top: 20px;
-	left: 20px;
+	top: 0;
+	left: 0;
 
 	list-style: none;
 
-	-webkit-transition: all ease-out 0.5s;
-	-o-transition: all ease-out 0.5s;
-	transition: all ease-out 0.5s;
+	-webkit-transition: all ease-out 1.5s;
+	-o-transition: all ease-out 1.5s;
+	transition: all ease-out 1.5s;
 }
 
 .drops li a {
